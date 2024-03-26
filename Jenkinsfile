@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run k6 test') {
       steps {
-        sh 'k6 run script.js'
+        sh 'k6 run 1-script.js'
       }
     }
   }
