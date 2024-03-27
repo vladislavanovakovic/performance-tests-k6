@@ -17,7 +17,7 @@ jobs:
       
       - name: Install k6
         run: |
-          curl -sSLf https://dl.k6.io | sudo sh
+          curl -sSL https://dl.k6.io/get-k6 | bash
           
       - name: Run k6 tests
         run: |
