@@ -20,12 +20,6 @@ jobs:
     name: k6 Load Test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
       - name: Checkout
         uses: actions/checkout@v1
       - name: Run cloud k6 test
