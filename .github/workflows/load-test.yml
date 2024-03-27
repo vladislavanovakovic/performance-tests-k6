@@ -26,6 +26,8 @@ jobs:
         uses: k6io/action@v0.1
         with:
           filename: 1-script.js
+          cloud: true
+          token: ${{ secrets.K6_CLOUD_API_TOKEN }}
           
   # This workflow contains a single job called "build"
   build:
