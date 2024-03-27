@@ -25,10 +25,10 @@ jobs:
       - name: Run cloud k6 test
         uses: k6io/action@v0.1
         with:
-          filename: 1-script.js
-          flags: --out json=results.json
+          filename: 1-script.js          
           cloud: true
           token: ${{ secrets.K6_CLOUD_API_TOKEN }}
+          flags: --out json=results.json
 
       - name: Upload performance test results
         uses: actions/upload-artifact@v3
