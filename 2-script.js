@@ -16,7 +16,7 @@ export default function () {
 
   check (res, {
     'is status 200': (r) => r.status === 200,
-    'text verification': (r) => r.body.includes("In the news")
+    'text verification': (r) => r.body.includes("Contact us")
 
   })
   sleep(3);
