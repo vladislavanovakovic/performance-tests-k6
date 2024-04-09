@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run k6 test') {
       steps {
-        bat 'k6 run 2-script.js'
+        bat 'k6 run 1-script.js'
       }
     }
   }
